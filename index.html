@@ -4,12 +4,12 @@
 </h1>
 <p>Click to trigger a function that will output a iframe script:</p>
 
-<button onclick="myFunction()">iframe</button>
+<button onclick="nonproxy()">iframe</button>
 
 <p id="demo"></p>
 
 <script>
-function myFunction() {
+function nonproxy() {
 var wom = prompt("u","https://"); if (wom != null);
 alert("javascript:{ (function () {var iframe = document.createElement('iframe'); /*create iframe*/iframe.src="+wom+"; /* the url entered */ iframe.width = window.innerWidth;  iframe.height = window.innerHeight;   document.body.appendChild(iframe);})();};")
 }
@@ -17,5 +17,15 @@ alert("javascript:{ (function () {var iframe = document.createElement('iframe');
 <footer>
 added if (wom != null)
 </footer>
+<button onclick="proxy()">iframe</button>
+
+<p id="demo"></p>
+
+<script>
+function proxy() {
+var wom = prompt("u","https://"); if (wom != null);
+alert("javascript:{ (function () {var iframe = document.createElement('iframe'); /*create iframe*/iframe.src="+wom+"; /* the url entered */ iframe.width = window.innerWidth;  iframe.height = window.innerHeight;   document.body.appendChild(iframe);})();};")
+}
+</script>
 </body>
 </html>
