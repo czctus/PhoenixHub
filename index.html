@@ -1,5 +1,19 @@
     <!DOCTYPE html>
 <html>
+    <style>
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+</style>
 <head>
     <title>Login page</title>
 </head>
@@ -15,7 +29,7 @@
         var confirmPassword = "czctus";
         var password = document.getElementById("pswd").value;
         if (password == confirmPassword) {
-             window.location="czctus.github.io/PhoenixHub/main";
+             window.location.href="czctus.github.io/PhoenixHub/main";
         }
         else{
             alert("Passwords do not match.");
