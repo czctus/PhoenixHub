@@ -1,5 +1,5 @@
 # PhoenixHub Script's
-Welcome to PHoenixHub!
+Welcome to PhoenixHub!
 We offer
 - IFrame Scripts
 - Website Loaders
